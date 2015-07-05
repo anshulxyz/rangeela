@@ -1,24 +1,42 @@
-# colorcubes
+# rangeela
 
-A scipt wriiten in Python 2.7.10 using the [pygame](http://www.pygame.org/news.html) library, that sets up randomly generated squares as your wallpaper on each startup, according to your screen resolution.
+# What is it?
 
-My inspiration was [this](https://github.com/zzggbb/colorblocks) beautifull script made by [Zane
-Bradley](https://github.com/zzggbb).
+**rangeela** is a little script to generate an image full of randomly coloured
+squares and sets that image as your wallpaper. 
 
-Requirements:
-```
-feh
-```
-read more about it here at [Ach wiki](https://wiki.archlinux.org/index.php/Feh).
+# Quick Start
 
-Usage:
-Clone the repo, and put the script in you **home** directory.
-Just put this in your .xinitrc or your startup script according to your DE/WM.
-Since I use [i3-wm](https://i3wm.org/), I have the below line in my ~/.i3/config file.
+Installation requires [python 2.7](https://docs.python.org/2/) obviously,
+[`pygame`](http://www.pygame.org/news.html) for generating the image and 
+[`feh`](https://wiki.archlinux.org/index.php/Feh) for setting the that image as your wallpaper.
+
+You can install all of them from your favorite package manager, can't you?
+
+# Installation
+
+`$ git clone https://github.com/anshulc95/rangeela.git ~/rangeela`
+`cd | cp ~/rangeela/rangeela.py ~/rangeela.py`
+
+and since I'm using [i3-wm](https://i3wm.org/), I have the below line in my ~/.i3/config file.
+
 ```
 python2 ~/rangeela.py
 ```
 
-![pic](https://raw.githubusercontent.com/anshulc95/rangeela/master/pic.png)
+To know where *you* should put this, read this Arch Wiki for [autostarting](https://wiki.archlinux.org/index.php/Autostarting) 
+things in your DE/WM.
 
-Rangeela, in 'Hindi' means colorfull :smiley:
+# Inspiration
+
+[colorblobks](https://github.com/zzggbb/colorblocks)
+
+# TODO:
+
+[rangeela](https://github.com/anshulc95/rangeela) is a work in progress, so any
+ideas and patches are appreciated.
+
+# Contact Me:
+
+[twitter](https://twitter.com/anshulc95)
+[GitHub](https://github.com/anshulc95)
