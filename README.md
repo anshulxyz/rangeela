@@ -19,6 +19,6 @@ Since I use [i3-wm](https://i3wm.org/), I have the below line in my ~/.i3/config
 python2 ~/rangeela.py
 ```
 
-![pic](https://raw.githubusercontent.com/anshulc95/colorcubes/master/wow.png)
+![pic](https://raw.githubusercontent.com/anshulc95/rangeela/master/pic.png)
 
 Rangeela, in 'Hindi' means colorfull :smiley:
