@@ -2,7 +2,8 @@
 
 ## What is it?
 
-**rangeela** is a little script to generate an image full of randomly coloured
+**rangeela** in 'Hindi' means colourfull. 
+Rangeela is a little script to generate an image full of randomly coloured
 squares and sets that image as your wallpaper. 
 
 ## Quick Start
