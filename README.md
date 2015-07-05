@@ -27,6 +27,12 @@ python2 ~/rangeela.py
 To know where *you* should put this, read this Arch Wiki for [autostarting](https://wiki.archlinux.org/index.php/Autostarting) 
 things in your DE/WM.
 
+## Example 
+
+this is what the wallpaper is going to look like:
+
+![pic](https://raw.githubusercontent.com/anshulc95/rangeela/master/pic.png)
+
 ## Inspiration
 
 [colorblobks](https://github.com/zzggbb/colorblocks)
