@@ -8,7 +8,7 @@ squares and sets that image as your wallpaper.
 
 ## Quick Start
 
-Installation requires [python 2.7](https://docs.python.org/2/) obviously,
+Installation requires [`python2`](https://docs.python.org/2/) obviously,
 [`pygame`](http://www.pygame.org/news.html) for generating the image and 
 [`feh`](https://wiki.archlinux.org/index.php/Feh) for setting the that image as your wallpaper.
 
@@ -17,7 +17,8 @@ You can install all of them from your favorite package manager, can't you?
 ## Installation
 
 `$ git clone https://github.com/anshulc95/rangeela.git ~/rangeela`
-`cd | cp ~/rangeela/rangeela.py ~/rangeela.py`
+
+`$ cd | cp ~/rangeela/rangeela.py ~/rangeela.py`
 
 and since I'm using [i3-wm](https://i3wm.org/), I have the below line in my ~/.i3/config file.
 
