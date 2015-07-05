@@ -1,11 +1,11 @@
-## rangeela
+# rangeela
 
-# What is it?
+## What is it?
 
 **rangeela** is a little script to generate an image full of randomly coloured
 squares and sets that image as your wallpaper. 
 
-# Quick Start
+## Quick Start
 
 Installation requires [python 2.7](https://docs.python.org/2/) obviously,
 [`pygame`](http://www.pygame.org/news.html) for generating the image and 
@@ -13,7 +13,7 @@ Installation requires [python 2.7](https://docs.python.org/2/) obviously,
 
 You can install all of them from your favorite package manager, can't you?
 
-# Installation
+## Installation
 
 `$ git clone https://github.com/anshulc95/rangeela.git ~/rangeela`
 `cd | cp ~/rangeela/rangeela.py ~/rangeela.py`
@@ -27,16 +27,16 @@ python2 ~/rangeela.py
 To know where *you* should put this, read this Arch Wiki for [autostarting](https://wiki.archlinux.org/index.php/Autostarting) 
 things in your DE/WM.
 
-# Inspiration
+## Inspiration
 
 [colorblobks](https://github.com/zzggbb/colorblocks)
 
-# TODO:
+## TODO:
 
 [rangeela](https://github.com/anshulc95/rangeela) is a work in progress, so any
 ideas and patches are appreciated.
 
-# Contact Me:
+## Contact Me:
 
 [twitter](https://twitter.com/anshulc95)
 [GitHub](https://github.com/anshulc95)
