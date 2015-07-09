@@ -1,32 +1,28 @@
-import pygame as pg
-from pygame.locals import *
 import sys
-from subprocess import call
-from random import randint
-import Tkinter as tk
+import random
+import subprocess
+import pygame as pg
 
-root = tk.Tk()
+
+square_size = (20, 20)
 
 pg.init()
 
-displayx = root.winfo_screenwidth()
-displayy = root.winfo_screenheight()
 
-screen = pg.display.set_mode((displayx,displayy), 0, 0)
+display_w = pg.display.Info().current_w
+display_h = pg.display.Info().current_h
 
-x = y = 0
 
-while (x < displayx and y < displayy):
-    pg.draw.rect(screen,(randint(0,255),randint(0,255),randint(0,255)),(x,y,20,20))
-    x=x+20
-    if(x >= displayx):
-        y = y+20
-        x = 0
+image = pg.Surface((display_w,display_h))
+for i in range(0, display_w+square_size[0], square_size[0]):
+    for j in range(0, display_h+square_size[1], square_size[1]):
+        color = [random.randint(0,255) for _ in range(3)]
+        rect = pg.Rect((i,j), square_size)
+        image.fill(color, rect)
 
-pg.image.save(screen, 'pic.png')
 
-call(["feh","--bg-center","pic.png"])
+pg.image.save(image, 'pic.png')
+subprocess.call(["feh","--bg-center","pic.png"])
 
 pg.quit()
 sys.exit()
-quit()
