@@ -2,7 +2,7 @@
 
 ## What is it?
 
-**rangeela** in 'Hindi' means colourfull. 
+**rangeela** in 'Hindi' means colourful. 
 Rangeela is a little script to generate an image full of randomly coloured
 squares and sets that image as your wallpaper. 
 
