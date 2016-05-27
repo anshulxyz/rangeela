@@ -19,9 +19,9 @@ draw = ImageDraw.Draw(image, mode="RGB")
 for i in range(0, screen_width+square_size[0], square_size[0]):
     for j in range(0, screen_height+square_size[1], square_size[1]):
         colours = [random.randint(0,255) for _ in range(3)]
-        red = colours[0]
-        green = colours[1]
-        blue = colours[2]
+        red = (colours[0]+255)/2
+        green = (colours[1]+255)/2
+        blue = (colours[2]+255)/2
         draw.rectangle( (i,j,20+i,20+j), fill=(red,green,blue) )
 
 # write to STDOUT
