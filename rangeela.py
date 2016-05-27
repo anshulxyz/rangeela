@@ -1,28 +1,28 @@
-import sys
+from PIL import Image, ImageDraw
 import random
-import subprocess
-import pygame as pg
+import sys
+import gtk
 
+# reading screen resolution
+screen_width = gtk.gdk.screen_width()
+screen_height = gtk.gdk.screen_height()
 
+# create new image
+image = Image.new("RGB",(screen_width, screen_height), "white")
+
+# square size
 square_size = (20, 20)
 
-pg.init()
+# open up the image for manipulation
+draw = ImageDraw.Draw(image, mode="RGB")
 
+for i in range(0, screen_width+square_size[0], square_size[0]):
+    for j in range(0, screen_height+square_size[1], square_size[1]):
+        colours = [random.randint(0,255) for _ in range(3)]
+        red = colours[0]
+        green = colours[1]
+        blue = colours[2]
+        draw.rectangle( (i,j,20+i,20+j), fill=(red,green,blue) )
 
-display_w = pg.display.Info().current_w
-display_h = pg.display.Info().current_h
-
-
-image = pg.Surface((display_w,display_h))
-for i in range(0, display_w+square_size[0], square_size[0]):
-    for j in range(0, display_h+square_size[1], square_size[1]):
-        color = [random.randint(0,255) for _ in range(3)]
-        rect = pg.Rect((i,j), square_size)
-        image.fill(color, rect)
-
-
-pg.image.save(image, 'pic.png')
-subprocess.call(["feh","--bg-center","pic.png"])
-
-pg.quit()
-sys.exit()
+# write to STDOUT
+image.save("pic.png")
