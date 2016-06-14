@@ -4,34 +4,45 @@
 
 **rangeela** in 'Hindi' means colourful. 
 Rangeela is a little script to generate an image full of randomly coloured
-squares and sets that image as your wallpaper. 
+squares, which you can set as your wallpaper or whatever you feel like.
 
 ## Quick Start
 
-Installation requires [`python2`](https://docs.python.org/2/) obviously,
-[`pygame`](http://www.pygame.org/news.html) for generating the image and 
-[`feh`](https://wiki.archlinux.org/index.php/Feh) for setting the that image as your wallpaper.
+Installation requires [**`python2`**](https://docs.python.org/2/) obviously,
+**gtk** for reading the screen resolution, and **PIL** ([Python Image Library](https://en.wikipedia.org/wiki/Python_Imaging_Library))
 
-You can install all of them from your favorite package manager, can't you?
-
-## Installation
-
-`$ git clone https://github.com/anshulc95/rangeela.git ~/rangeela`
-
-`$ cd | cp ~/rangeela/rangeela.py ~/rangeela.py`
-
-and since I'm using [i3-wm](https://i3wm.org/), I have the below line in my ~/.i3/config file.
-
-```
-python2 ~/rangeela.py
+You can install all of them from your favorite package manager, if you are like
+me using Arch(or Arch-like) then you can search your official repos using
+```linux
+sudo pacman -Ss`
 ```
 
-To know where *you* should put this, read this Arch Wiki for [autostarting](https://wiki.archlinux.org/index.php/Autostarting) 
-things in your DE/WM.
+## Instructions
+
+1. `$ git clone https://github.com/anshulc95/rangeela.git ~/rangeela`
+2. `$ cd ~/rangeela`
+3. `$ python2 rangeela.py`
+4. Now your wallpaper is generated, you can use your preferred wallpaper manager
+to set *this* as your wallpaper.
+
+## Update in v1.1.0
+
+I have replaced the *pygame* with *PIL(Python Image Library)* since it's better
+maintained and is focused specially on image manipulation, thus giving me more
+things to try with images.
+
+I have faded the colours, tried to mute them down. By mixing them with the 'white'
+colour, and then taking a average of them.
+
+I have removed the feature of script setting the wallpaper for you, I realised
+people have different application according to their taste which they use for
+customizing their desktop, so setting wallpaper, I leave that to you.
+
+You can find previous releases [here](https://github.com/anshulc95/rangeela/releases)
 
 ## Example 
 
-this is what the wallpaper is going to look like:
+This is what the wallpaper is going to look like:
 
 ![pic](https://raw.githubusercontent.com/anshulc95/rangeela/master/pic.png)
 
@@ -41,8 +52,8 @@ this is what the wallpaper is going to look like:
 
 ## TODO:
 
-[rangeela](https://github.com/anshulc95/rangeela) is a work in progress, so any
-ideas and patches are appreciated.
+1. Use `argparse` to get specific instructions
+2. Add the wallpaper to Ubuntu's default Unity wallpaper manager
 
 ## Contact Me:
 

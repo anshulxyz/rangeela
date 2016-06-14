@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw
 import random
-import sys
 import gtk
 
 # reading screen resolution
