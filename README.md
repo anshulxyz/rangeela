@@ -14,7 +14,7 @@ Installation requires [**`python2`**](https://docs.python.org/2/) obviously,
 You can install all of them from your favorite package manager, if you are like
 me using Arch(or Arch-like) then you can search your official repos using
 ```linux
-sudo pacman -Ss`
+sudo pacman -Ss
 ```
 
 ## Instructions
