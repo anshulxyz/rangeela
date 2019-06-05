@@ -42,8 +42,8 @@ This is what the wallpaper is going to look like:
 
 ## Contact Me:
 
-[twitter](https://twitter.com/anshulc95)
-[GitHub](https://github.com/anshulc95)
+[twitter](https://twitter.com/anshulxyz)
+[GitHub](https://github.com/anshulxyz)
 
 
 ## Release notes
